@@ -4,62 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Florette</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--Header de page-->
-    <header class="fond-noir">
-        <h1><a href="#">CAFE FLORETTE</a></h1>
-        <nav>
-            <ul>
-                <a>Accueil</a>
-                <a class="autre" href="./src/pages/trouver.html">Nous trouver</a>
-                <a class="autre" href="./src/pages/contact.html">Contact</a>
-            </ul>  
-        </nav>
-    </header>
-    <!--Tête de page avec une background image (mise par css)-->
-    <section class="tetePage">
-        <h2>Toute l'expertise <br>française dans un café</h2>
-        <div class="barre1"></div>
-        <p class="lorem1">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+<header>
+    <h1 style="color: white;"><a href="#">CAFE FLORETTE</a></h1>    
+    <nav>
+        <ul>
+            <li class="selected"><a href="#">Accueil</a></li>
+            <li><a href="./pages/trouver.html">Nous trouver</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="tetePage">
+    <div class="colonneCentre">
+        <h2>Toute l'expertise française dans un café</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Aspernatur nemo cupiditate earum eum porre unde sint ducimus
             vero voluptas, perferendis quasi quia accusamus omnisrerum.
-            Neque sapiente quidem distinctio dolorem?
-        </p>
-        <button class="decouvrir">DECOUVRIR</button>
-    </section>
-    <!-- Section avec les icones pour décrire le café-->
-    <section class="icone">
-        <div class="tasse-cafe">
+            Neque sapiente quidem distinctio dolorem?</p>
+        <button class="decouvrir">DÉCOUVRIR</button>
+    </div>
+</section>
+
+<section class="icones">
+        <div class="centre">
             <i class="fas fa-coffee fa-3x my-10"></i>
-            <br><h3>Un nouveau café par jour</h3>
-            <p><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. ID,
-             architectol Vitae animi dolor sit, saepe cum iusto repellat quis
-              suscipit.</p>
-        </div>  
-        <div class="horloge-fleche">
-            <i class="fas fa-clock fa-3x my-10"></i>
-           <br><h3>Ouvert 24h/24 7j/7</h3>
-            <p><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-             Consequuntur, et dolore sint iure fuga quidem atque odit at debitis
-             provident!</p>
+            <h3>Un nouveau café par jour</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. ID,
+                architectol Vitae animi dolor sit, saepe cum iusto repellat quis
+                 suscipit.</p>
         </div>
-    </section>
-    <!--Image pour attirer l'oeil-->
-    <div class="meuf"></div>
-    <!--Section pour réservez pour le café-->
-    <section class="reservation">
+        <div class="centre">
+            <i class="fas fa-clock fa-3x my-10"></i>
+            <h3>Ouvert 24h/24 7j/7</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur, et dolore sint iure fuga quidem atque odit at debitis
+                provident!</p>
+        </div>
+</section>
+
+<div class="meuf">
+
+</div>
+
+<section class="colonneCentre">
         <h3>Réservez dès maintenant</h3>
-        <p class="text-latin">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique soluta voluptates, placeat iure neque dolores vel? Facere<br>
-            perspiciatis vel quasi, deleniti inventore obcaecati animi harum totam. Hic, nisi cumque
-        </p>
-        <button class="reserver">RESERVEZ</button>
-    </section>
-    <footer id="copyr">Copyright &copy; - florette - 2019</footer>
+        <p class="fullWidth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique soluta voluptates, placeat iure neque dolores vel? Facere<br>
+            perspiciatis vel quasi, deleniti inventore obcaecati animi harum totam. Hic, nisi cumque</p>
+        <button class="reservez">RÉSERVEZ</button>
+</section>
+
+<footer class="footer">
+    <p class="noMargin">Copyright &copy; - Florette - 2019</p>
+</footer>
+
 </body>
 </html>

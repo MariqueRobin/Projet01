@@ -1,235 +1,313 @@
 /* Normalization de ma page RESET CSS */
-*{
+* {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
 /*Styles pour toutes les pages*/
 header {
-    background-color: rgb(68, 68, 68);
-    color: rgb(255, 255, 255);
+    background-color: #333;
+    height: 10vh;
+    padding: 0px 20px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#copyr {
-    background-color: #444;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    padding-top: 10px;
-}
-
-#copyr1 {
-    background-color: black;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    padding-top: 10px;
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
-    padding-left: 1em;
+    color: white;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 20px 0px;
+    width: 400px;
     text-align: center;
+    line-height: 2pc;
 }
 
-a:hover{
-    background-color: grey;
-}
-
-.autre{
-    
-    background-color: black;
-}
-
-/* Style page d'accueil*/
-
-    /*header*/
-
-h1.a{
-    flex: 0 0 65%;
-    font-size: 17px;
-    text-align: center;
-}
-
-nav{
-    flex: 1;
-    text-align: right;
-    font-size: 14px;
-    padding-top: 10px;
-    padding-right: 10px;
-}
-
-.tetePage {
-    background-image: url("./src/img/cafe.jpg");
-    text-align: center;
-    color: white;
-    padding-top: 6em;
-    padding-bottom: 8em;
-    background-size: 100% 28em;
-    background-repeat: no-repeat;
-}
-
-.barre1 {
-    height: 8px ;
-    width: 4%;
-    background-color: black;
-    margin-left: 48% ;
-    margin-top: 10px;
+i {
     margin-bottom: 10px;
 }
 
-.lorem1{
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.decouvrir {
-    border-radius: 10px;
-    font-size: 9px;
-    width: 90px; 
-    height: 30px;
-}
-.decouvrir:hover {
-    background-color: black;
-    color: white;
-}
-    /* info avec icones */
-
-.icone {
-    margin-top: 4em;
-    margin-bottom: 4em;
-    text-align: center;
-    overflow: auto;
-}
-
-.tasse-cafe {
-    float:left;
-    font-size: 11px;
-    width: 20%;
-    margin-left: 25%;
-}
-
-.horloge-fleche {
-    float: right;
-    font-size: 11px;
-    width: 20%;
-    margin-right: 25%;
-}
 
 
-/*image meuf*/
-
-.meuf {
-    background-image: url("./src/img/meuf.jpg");
-    background-position: center center;
-    padding: 100px;
-    background-size: cover;
-    height: 250px;
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-    /*Partie réservation*/
-
-.reservation {
-    text-align: center;
-    height: 250px;
-    padding-top: 75px;
+li {
+    padding: 20px;
+    transition: 0.3s ease-in-out;
 }
 
-h3 {
-    font-size: 14px;
+li:hover {
+    background-color: rgb(90, 90, 90);
+    transition: 0.3s ease-in-out;
 }
 
-.text-latin{
-    font-size: 11px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+h1 {
+    font-size: 1.4rem;
 }
 
-.reserver {
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    font-size: 9px;
-    width: 90px; 
-    height: 30px;
-}
-.reserver:hover {
-    background-color: white;
-    color: black;
-}
-
-/*Style page "Nous trouver"*/
-
-.formulaire {
-    padding-top:  8em;
-    padding-bottom: 8em;
-    margin-left: 35%;
-    margin-right:  35%;
-}
-
-.ligne-fine {
-    size: 30px;
-}
+/*Page Accueil */
 
 h2 {
+    font-size: 3rem;
+    max-width: 60%;
     text-align: center;
 }
 
-.remplir {
-    size: 100%;
+hr {
+    width: 100px;
+    height: 10px;
+    margin-top: 20px;
+    background-color: black;
 }
 
-/*Style page Contact*/
-
-.information {
-    padding-top: 8em;
-    padding-bottom: 6em;
-    display: inline;
+.selected {
+    background-color: rgb(70, 70, 70);  
 }
 
-.carte {
-    height: 300px;
-    width: 400px;
+.noMargin {
+    margin: 0;
 }
 
-.bouger-carte{
-    
-    padding-top: 12em;
-    float: left;
-    margin-left: 25%;
+.fullWidth {
+    width: 80%;
 }
 
-.chemin {
-    font-size: 22px;
-    padding-top: 12em;
-    float: right;
-    margin-right: 25%;
-}
-
-.quatre {
-    border-radius: 60%;
-    background-color: rosybrown;
+.tetePage {
+    height: 100vh;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/frame.jpg);
+    background-size: cover;
 }
 
-.onze {
-    
-    border-radius: 60%;
-    background-color: rgba(110, 49, 8, 0.774);
+.decouvrir {
+    border: unset;
+    margin: 10px 0px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.decouvrir:hover {
+    color: white ;
+    background-color: #333;
+}
+
+.reservez {
+    border: unset;
+    margin: 10px 0px;
+    background-color: #333;
+    border-radius: 30px;
+    padding: 15px 30px;
     color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.reservez:hover{
+    color: #333;
+    background-color: wheat;
+}
+
+.meuf {
+    height: 420px;
+    background-image: url(./images/person-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.icones {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.centre {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colonneCentre {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page Trouver */
+
+
+.petit {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.grand {
+    margin: 15px 0px;
+    font-weight: 700;
+}
+
+.ligne2 {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0px;
+    background-color: rgb(214, 214, 214);
+}
+
+.rose {
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background-color: palevioletred;
+}
+
+.brun {
+    color: white;  
+    padding: 3px 5px;
+    border-radius: 20px;
+    background-color: brown;
+}
+
+.centeredColumn {
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explication {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.centeredRow {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerTrouver {
+    background-color: #333;
+    color: white;
+    padding: 10px 0px;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pages Contact */
+
+
+label {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+textarea {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+.selected {
+    background-color: rgb(70, 70, 70);  
+}
+
+.principal {
+    width: 40%;
 }
 
 
+.centreContact {
+    width: 100vw;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.ligne {
+    width: 100%;
+    height: 1px;
+    margin: 15px 0px;
+    background-color: rgb(214, 214, 214);
+}
 
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.footerContact {
+    background-color: #333;
+    color: white;
+    padding: 10px 0px;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
