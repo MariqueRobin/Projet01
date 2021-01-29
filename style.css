@@ -8,7 +8,7 @@
 header {
     background-color: #333;
     height: 10vh;
-    padding: 0px 20px;
+    padding: 0rem 1.25rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -135,7 +135,8 @@ hr {
 
 .reservez:hover{
     color: #333;
-    background-color: wheat;
+    background-color: white;
+    border: 1px solid #333;
 }
 
 .meuf {
@@ -147,7 +148,7 @@ hr {
 
 .icones {
     width: 80%;
-    margin: 100px auto;
+    margin: 4rem auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -213,7 +214,6 @@ hr {
 }
 
 .explication {
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -310,4 +310,30 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+
+/* Adaptation du css selon l'écran */
+
+@media screen and (min-width:300px) and (max-width: 505px){
+    
+    header{
+        text-align: center;
+        display: block;
+        height: auto;
+    }
+    .icones div p{
+        width: auto;
+    }
+    .icones div h3{
+        text-align: center;
+    }
+    .centeredRow{
+        display: block;
+        width: auto;
+    }
+    .explication{
+        margin-top: 1rem;
+        text-align: center;
+    }
 }
